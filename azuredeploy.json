@@ -203,7 +203,7 @@
     "frontEndSubnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('frontEndSubnetName'))]",
     "backEndSubnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('backEndSubnetName'))]",
     "dmzSubnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('dmzSubnetName'))]",
-    "templateBaseUrl": "file://C:/scripts/Azure/myTemplates/"
+    "templateBaseUrl": "https://raw.githubusercontent.com/digicomms/azure-templates/master/"
   },
   "resources": [
     {
