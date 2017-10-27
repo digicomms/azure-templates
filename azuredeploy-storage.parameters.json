@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "stdStorageName": {
-      "value": "testrgpstoragestd38677"
+      "value": "[concat(uniqueString(resourceGroup().id),'storage')]"
     },
     "stdStorageType": {
       "value": "Standard_LRS"
     },
     "prmStorageName": {
-      "value": "testrgpstorageprm38677"
+      "value": "[concat(uniqueString(resourceGroup().id),'storage')]"
     },
     "prmStorageType": {
       "value": "Premium_LRS" 

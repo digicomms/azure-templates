@@ -4,7 +4,7 @@
   "parameters": {
     "stdStorageName": {
       "type": "string",
-      "defaultValue": "testrgpstoragestd38677",
+      "defaultValue": "[concat(uniqueString(resourceGroup().id),'storage')]",
       "metadata": {
         "description": "Name for simple storage account."
       }
@@ -20,7 +20,7 @@
     },
     "prmStorageName": {
       "type": "string",
-      "defaultValue": "testrgpstorageprm38677",
+      "defaultValue": "[concat(uniqueString(resourceGroup().id),'storage')]",
       "metadata": {
         "description": "Name for simple storage account."
       }
